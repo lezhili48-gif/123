@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.venv/
+dist/
+build/
+data/*
+!data/.gitkeep
+services/backend/.pytest_cache/
+services/backend/.mypy_cache/
+services/backend/playwright-profile/
+services/backend/screenshots/
+services/backend/exports/
+apps/desktop/dist/

@@ -1,0 +1,12 @@
+{
+  "name": "litreviewagent-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd services/backend && python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000\" \"cd apps/desktop && npm run dev\"",
+    "backend": "cd services/backend && python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "desktop": "cd apps/desktop && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
